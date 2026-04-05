@@ -1,0 +1,20 @@
+---
+layout: layout
+---
+<main class="page-shell">
+    <section class="page-hero">
+        <div class="page-hero__inner">
+            <span class="eyebrow"><%= page.categoryLabel || "Information" %></span>
+            <h1><%= page.title %></h1>
+            <% if (page.description) { %>
+            <p><%= page.description %></p>
+            <% } %>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="page-content__inner prose-content">
+            <%- page.content || body %>
+        </div>
+    </section>
+</main>

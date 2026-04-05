@@ -1,65 +1,48 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
-title: 浩麟的博客
-subtitle: 实用、前沿、深入、原创
-author: 吴浩麟
-language: zh-CN
-timezone:
+title: Yungu Studio
+subtitle: Practical tools for focused work
+author: Independent Developer
+language: en
+timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://wuhaolin.cn
+url: https://yungustudio.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-#Custom Setting Start
-
-# Site settings
-SEOTitle: 浩麟的博客
+# Shared site metadata
+SEOTitle: Yungu Studio
 header-img: img/bg.jpg
-email: gwuhaolin@icloud.com
-description: ""
-keyword: ""
+email: 820713556@qq.com
+description: Independent developer building practical tools for navigation, multitasking, and everyday workflow improvement.
+keyword: independent developer, productivity tools, chrome extension, macOS utility, ChatGPT Timeline Navigate, DockDoor
 
+# Social links
+github_username: echo0110
 
-# SNS settings
-# RSS: false
-zhihu_username:     wu-hao-lin-67-15
-github_username:    gwuhaolin
-
-# Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Analytics settings
-# Google Analytics
-ga_track_id: 'UA-54964850-1'            # Format: UA-xxxxxx-xx
-ga_domain: wuhaolin.cn
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
+# Theme settings
+anchorjs: true
+featured-tags: true
+featured-condition-size: 1
+sidebar: false
+sidebar-about-description: Independent developer building practical software for better workflows.
 
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: i_dont_wanna_use_default_archives
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+titlecase: false
+external_link: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -77,25 +60,16 @@ category_map:
 tag_map:
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination
-## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: huxblog
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/gwuhaolin/blog
-  branch: gh-pages
+  type:

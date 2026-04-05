@@ -1,23 +1,31 @@
 ---
-layout: "about"
-title: "关于"
-date: 2016-04-21 04:48:33
-description: "Hi，我是浩麟"
-header-img: "img/bg.jpg"
+layout: simple-page
+title: About
+categoryLabel: About
+description: Learn who is behind Yungu Studio and how the products are presented.
 ---
 
-前端工程师，目前就职于美团成都，曾就职于腾讯深圳。
+## Independent developer
 
-### [我的在线简历](http://resume.wuhaolin.cn/)
+Yungu Studio is a personal website operated by an independent developer. The site is designed to present software products clearly, maintain a direct support path, and provide public-facing legal information that users can review before using a product.
 
-### 我出版的图书
-<a href="http://webpack.wuhaolin.cn/">
-    <img src="http://p0.meituan.net/scarlett/df16c51ffb95186df6f75d8c0e22b965842464.png" width="306px" height="411px" alt="深入浅出 Webpack"/>
-</a>
+## What I build
 
-### 我的电影小站
-<a href="https://dy.wuhaolin.cn/">dy电影</a>
+The current focus is practical software for productivity and workflow improvement:
 
-### 我的浏览器插件
-<a href="http://djradar.wuhaolin.cn/">低价雷达</a>
-<a href="http://bilidown.wuhaolin.cn/">B站视频下载</a>
+- Tools that make long-form reading or navigation easier
+- Tools that improve multitasking and desktop efficiency
+- Small products with clear positioning and maintainable scope
+
+## Product philosophy
+
+I prefer straightforward product communication:
+
+- Explain what the software does in direct language
+- Avoid vague claims and inflated marketing
+- Keep support and policy information easy to find
+- Make the site simple to maintain and update over time
+
+## Contact
+
+For support or business inquiries, email [820713556@qq.com](mailto:820713556@qq.com).
