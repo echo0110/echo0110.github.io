@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-site-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,74 +17,104 @@
     <div class="site-nav__inner">
       <a class="site-nav__brand" href="/">
         <span class="site-nav__brand-mark">YS</span>
-        <span class="site-nav__brand-copy"><strong>Yungu Studio</strong><small>Independent developer</small></span>
+        <span class="site-nav__brand-copy">
+          <strong>Yungu Studio</strong>
+          <small>
+            <span data-lang="en">Independent developer</span>
+            <span data-lang="zh">独立开发者</span>
+          </small>
+        </span>
       </a>
-      <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav-links"><span></span><span></span><span></span></button>
+      <div class="site-nav__controls" data-lang-flex="en">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button type="button" data-lang-toggle="en">EN</button>
+          <button type="button" data-lang-toggle="zh">中文</button>
+        </div>
+        <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav-links"><span></span><span></span><span></span></button>
+      </div>
       <div class="site-nav__links" id="site-nav-links">
-        <a href="/">Home</a>
-        <a href="/products/">Products</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="/archives/">Articles</a>
+        <a href="/"><span data-lang="en">Home</span><span data-lang="zh">首页</span></a>
+        <a href="/products/"><span data-lang="en">Products</span><span data-lang="zh">产品</span></a>
+        <a href="/about/"><span data-lang="en">About</span><span data-lang="zh">关于</span></a>
+        <a href="/contact/"><span data-lang="en">Contact</span><span data-lang="zh">联系</span></a>
+        <a href="/archives/"><span data-lang="en">Articles</span><span data-lang="zh">文章</span></a>
       </div>
     </div>
   </nav>
   <main class="home-shell">
     <section class="section-wrap hero-section">
       <div class="hero-copy">
-        <span class="eyebrow">Independent developer storefront</span>
-        <h1>Practical software for clearer reading and faster desktop workflows.</h1>
-        <p>Yungu Studio is a personal website for an independent developer building small, focused tools. The products here are presented plainly, with clear contact details, legal pages, and straightforward descriptions of what each tool does.</p>
+        <span class="eyebrow">
+          <span data-lang="en">Independent developer storefront</span>
+          <span data-lang="zh">独立开发者产品站</span>
+        </span>
+        <h1>
+          <span data-lang="en">Practical software for clearer reading and faster desktop workflows.</span>
+          <span data-lang="zh">为更清晰的阅读体验和更高效的桌面工作流而设计的实用软件。</span>
+        </h1>
+        <p>
+          <span data-lang="en">Yungu Studio is a personal website for an independent developer building small, focused tools. The products here are presented plainly, with clear contact details, legal pages, and straightforward descriptions of what each tool does.</span>
+          <span data-lang="zh">Yungu Studio 是一个独立开发者的个人网站，专注于构建小而明确的效率工具。网站会清楚展示产品用途、联系方式、法律页面，以及每个工具的实际功能。</span>
+        </p>
         <div class="hero-actions">
-          <a class="button" href="/products/">View products</a>
-          <a class="button-secondary" href="/about/">About the developer</a>
+          <a class="button" href="/products/"><span data-lang="en">View products</span><span data-lang="zh">查看产品</span></a>
+          <a class="button-secondary" href="/about/"><span data-lang="en">About the developer</span><span data-lang="zh">了解开发者</span></a>
         </div>
         <div class="hero-stats">
-          <div><strong>2</strong><span>Featured products</span></div>
-          <div><strong>1</strong><span>Independent developer</span></div>
-          <div><strong>Global</strong><span>English-first support site</span></div>
+          <div><strong>2</strong><span><span data-lang="en">Featured products</span><span data-lang="zh">核心产品</span></span></div>
+          <div><strong>1</strong><span><span data-lang="en">Independent developer</span><span data-lang="zh">独立开发者</span></span></div>
+          <div><strong>Global</strong><span><span data-lang="en">English and Chinese support</span><span data-lang="zh">支持中英文切换</span></span></div>
         </div>
       </div>
       <aside class="hero-panel">
         <div class="hero-panel__top">
-          <span class="eyebrow">Review-friendly presentation</span>
-          <h2>Built to be transparent.</h2>
-          <p>This site explains who is behind the products, what each tool is for, how to contact support, and where to find the legal policies that apply.</p>
+          <span class="eyebrow">
+            <span data-lang="en">Review-friendly presentation</span>
+            <span data-lang="zh">透明清晰的展示方式</span>
+          </span>
+          <h2>
+            <span data-lang="en">Built to be transparent.</span>
+            <span data-lang="zh">以透明和清晰为原则构建。</span>
+          </h2>
+          <p>
+            <span data-lang="en">This site explains who is behind the products, what each tool is for, how to contact support, and where to find the legal policies that apply.</span>
+            <span data-lang="zh">这个网站会说明谁在开发这些产品、每个工具解决什么问题、如何联系支持，以及相关法律政策在哪里查看。</span>
+          </p>
         </div>
         <ul class="hero-panel__list">
-          <li><strong>ChatGPT Timeline Navigate</strong><br>Chrome extension for navigating long ChatGPT conversations more efficiently.</li>
-          <li><strong>DockDoor</strong><br>macOS utility for improving app and window switching during multitasking.</li>
-          <li><strong>Support</strong><br><a href="mailto:820713556@qq.com">820713556@qq.com</a></li>
+          <li><strong>ChatGPT Timeline Navigate</strong><br><span data-lang="en">Chrome extension for navigating long ChatGPT conversations more efficiently.</span><span data-lang="zh">用于更高效浏览超长 ChatGPT 对话的 Chrome 扩展。</span></li>
+          <li><strong>DockDoor</strong><br><span data-lang="en">macOS utility for improving app and window switching during multitasking.</span><span data-lang="zh">用于改善多任务场景下应用和窗口切换体验的 macOS 工具。</span></li>
+          <li><strong><span data-lang="en">Support</span><span data-lang="zh">支持联系</span></strong><br><a href="mailto:820713556@qq.com">820713556@qq.com</a></li>
         </ul>
       </aside>
     </section>
     <section class="section section-wrap">
       <div class="section-heading">
-        <span class="eyebrow">Featured products</span>
-        <h2>Two focused tools, two clear use cases.</h2>
+        <span class="eyebrow"><span data-lang="en">Featured products</span><span data-lang="zh">精选产品</span></span>
+        <h2><span data-lang="en">Two focused tools, two clear use cases.</span><span data-lang="zh">两个聚焦产品，对应两个清晰使用场景。</span></h2>
       </div>
       <div class="product-grid">
         <article class="product-card">
-          <div class="product-card__meta"><span class="meta-pill">Chrome extension</span><span class="meta-pill">Chat navigation</span></div>
+          <div class="product-card__meta"><span class="meta-pill"><span data-lang="en">Chrome extension</span><span data-lang="zh">Chrome 扩展</span></span><span class="meta-pill"><span data-lang="en">Chat navigation</span><span data-lang="zh">对话导航</span></span></div>
           <h3>ChatGPT Timeline Navigate</h3>
-          <p>A browser extension designed to make long ChatGPT conversations easier to browse. It focuses on navigation clarity, faster section jumping, and a smoother reading flow in large threads.</p>
+          <p><span data-lang="en">A browser extension designed to make long ChatGPT conversations easier to browse. It focuses on navigation clarity, faster section jumping, and a smoother reading flow in large threads.</span><span data-lang="zh">这是一个帮助用户更轻松浏览长篇 ChatGPT 对话的浏览器扩展，重点提升导航清晰度、分段跳转效率，以及长线程阅读流畅度。</span></p>
           <ul class="product-highlights">
-            <li>Timeline-style navigation for long conversations</li>
-            <li>Faster jumping between sections of a chat</li>
-            <li>Cleaner browsing experience for large threads</li>
+            <li><span data-lang="en">Timeline-style navigation for long conversations</span><span data-lang="zh">为长对话提供时间线式导航</span></li>
+            <li><span data-lang="en">Faster jumping between sections of a chat</span><span data-lang="zh">更快跳转到对话中的不同部分</span></li>
+            <li><span data-lang="en">Cleaner browsing experience for large threads</span><span data-lang="zh">让超长线程浏览更清爽</span></li>
           </ul>
-          <div class="inline-actions"><a class="button" href="/products/#chatgpt-timeline-navigate">Learn more</a><a class="button-secondary" href="mailto:820713556@qq.com?subject=ChatGPT%20Timeline%20Navigate">Request link</a></div>
+          <div class="inline-actions"><a class="button" href="/products/#chatgpt-timeline-navigate"><span data-lang="en">Learn more</span><span data-lang="zh">了解更多</span></a><a class="button-secondary" href="mailto:820713556@qq.com?subject=ChatGPT%20Timeline%20Navigate"><span data-lang="en">Request link</span><span data-lang="zh">获取链接</span></a></div>
         </article>
         <article class="product-card">
-          <div class="product-card__meta"><span class="meta-pill">macOS software</span><span class="meta-pill">Desktop productivity</span></div>
+          <div class="product-card__meta"><span class="meta-pill"><span data-lang="en">macOS software</span><span data-lang="zh">macOS 软件</span></span><span class="meta-pill"><span data-lang="en">Desktop productivity</span><span data-lang="zh">桌面效率</span></span></div>
           <h3>DockDoor</h3>
-          <p>A macOS utility built for people who want quicker app and window switching. It is positioned as a lightweight productivity tool for improving multitasking and desktop workflow efficiency.</p>
+          <p><span data-lang="en">A macOS utility built for people who want quicker app and window switching. It is positioned as a lightweight productivity tool for improving multitasking and desktop workflow efficiency.</span><span data-lang="zh">这是一个为希望更快切换应用和窗口的用户打造的 macOS 工具，定位为轻量级桌面效率软件，用于改善多任务处理体验。</span></p>
           <ul class="product-highlights">
-            <li>Faster switching between apps and windows</li>
-            <li>Cleaner multitasking experience on macOS</li>
-            <li>Lightweight utility for productivity-focused users</li>
+            <li><span data-lang="en">Faster switching between apps and windows</span><span data-lang="zh">更快切换应用与窗口</span></li>
+            <li><span data-lang="en">Cleaner multitasking experience on macOS</span><span data-lang="zh">改善 macOS 多任务操作体验</span></li>
+            <li><span data-lang="en">Lightweight utility for productivity-focused users</span><span data-lang="zh">适合效率用户的轻量工具</span></li>
           </ul>
-          <div class="inline-actions"><a class="button" href="/products/#dockdoor">Learn more</a><a class="button-secondary" href="mailto:820713556@qq.com?subject=DockDoor">Request link</a></div>
+          <div class="inline-actions"><a class="button" href="/products/#dockdoor"><span data-lang="en">Learn more</span><span data-lang="zh">了解更多</span></a><a class="button-secondary" href="mailto:820713556@qq.com?subject=DockDoor"><span data-lang="en">Request link</span><span data-lang="zh">获取链接</span></a></div>
         </article>
       </div>
     </section>
@@ -92,19 +122,19 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="site-footer__intro">
-        <p class="site-footer__eyebrow">Independent developer</p>
+        <p class="site-footer__eyebrow"><span data-lang="en">Independent developer</span><span data-lang="zh">独立开发者</span></p>
         <h2>Yungu Studio</h2>
-        <p>Building practical software for better reading, navigation, and desktop workflows.</p>
+        <p><span data-lang="en">Building practical software for better reading, navigation, and desktop workflows.</span><span data-lang="zh">构建更适合阅读、导航和桌面效率场景的实用软件。</span></p>
       </div>
       <div class="site-footer__grid">
-        <div><h3>Products</h3><a href="/products/#chatgpt-timeline-navigate">ChatGPT Timeline Navigate</a><a href="/products/#dockdoor">DockDoor</a></div>
-        <div><h3>Company</h3><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/archives/">Articles</a></div>
-        <div><h3>Legal</h3><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/refund-policy/">Refund Policy</a></div>
-        <div><h3>Support</h3><a href="mailto:820713556@qq.com">820713556@qq.com</a><a href="https://github.com/echo0110" target="_blank" rel="noopener">GitHub</a></div>
+        <div><h3><span data-lang="en">Products</span><span data-lang="zh">产品</span></h3><a href="/products/#chatgpt-timeline-navigate">ChatGPT Timeline Navigate</a><a href="/products/#dockdoor">DockDoor</a></div>
+        <div><h3><span data-lang="en">Company</span><span data-lang="zh">网站信息</span></h3><a href="/about/"><span data-lang="en">About</span><span data-lang="zh">关于</span></a><a href="/contact/"><span data-lang="en">Contact</span><span data-lang="zh">联系</span></a><a href="/archives/"><span data-lang="en">Articles</span><span data-lang="zh">文章</span></a></div>
+        <div><h3><span data-lang="en">Legal</span><span data-lang="zh">法律</span></h3><a href="/privacy-policy/"><span data-lang="en">Privacy Policy</span><span data-lang="zh">隐私政策</span></a><a href="/terms-of-service/"><span data-lang="en">Terms of Service</span><span data-lang="zh">服务条款</span></a><a href="/refund-policy/"><span data-lang="en">Refund Policy</span><span data-lang="zh">退款政策</span></a></div>
+        <div><h3><span data-lang="en">Support</span><span data-lang="zh">支持</span></h3><a href="mailto:820713556@qq.com">820713556@qq.com</a><a href="https://github.com/echo0110" target="_blank" rel="noopener">GitHub</a></div>
       </div>
-      <div class="site-footer__meta"><p>&copy; 2026 Yungu Studio. Operated by an independent developer.</p></div>
+      <div class="site-footer__meta"><p><span data-lang="en">&copy; 2026 Yungu Studio. Operated by an independent developer.</span><span data-lang="zh">&copy; 2026 Yungu Studio。由独立开发者运营。</span></p></div>
     </div>
   </footer>
-  <script>var navToggle=document.querySelector('.site-nav__toggle');var navLinks=document.querySelector('.site-nav__links');if(navToggle&&navLinks){navToggle.addEventListener('click',function(){var isOpen=navLinks.classList.toggle('is-open');navToggle.setAttribute('aria-expanded',isOpen?'true':'false');});}</script>
+  <script src="/js/lang.js"></script>
 </body>
 </html>

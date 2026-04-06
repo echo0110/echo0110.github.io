@@ -118,6 +118,64 @@ a:focus {
   color: #334155;
 }
 
+.site-nav__controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+}
+
+.lang-switch button {
+  min-width: 44px;
+  height: 34px;
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: #475569;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.lang-switch button.is-active {
+  background: linear-gradient(135deg, var(--brand), #1d4ed8);
+  color: #fff;
+}
+
+[data-lang] {
+  display: none;
+}
+
+html[data-site-lang="en"] [data-lang="en"],
+html[data-site-lang="zh"] [data-lang="zh"] {
+  display: initial;
+}
+
+html[data-site-lang="en"] [data-lang-block="en"],
+html[data-site-lang="zh"] [data-lang-block="zh"] {
+  display: block;
+}
+
+html[data-site-lang="en"] [data-lang-flex="en"],
+html[data-site-lang="zh"] [data-lang-flex="zh"] {
+  display: flex;
+}
+
+html[data-site-lang="en"] [data-lang-inlineflex="en"],
+html[data-site-lang="zh"] [data-lang-inlineflex="zh"] {
+  display: inline-flex;
+}
+
 .site-nav__toggle {
   display: none;
   width: 44px;
@@ -504,7 +562,6 @@ a:focus {
 
   .site-nav__toggle {
     display: inline-block;
-    margin-left: auto;
   }
 
   .site-nav__links {
@@ -518,6 +575,12 @@ a:focus {
 
   .site-nav__links.is-open {
     display: flex;
+  }
+
+  .site-nav__controls {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
   }
 
   .home-shell,
