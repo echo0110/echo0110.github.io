@@ -388,6 +388,56 @@ html[data-site-lang="zh"] [data-lang-inlineflex="zh"] {
   margin-bottom: 20px;
 }
 
+.notice-card,
+.pricing-card,
+.faq-card,
+.legal-meta,
+.support-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+}
+
+.pricing-grid,
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.legal-meta {
+  margin-bottom: 24px;
+}
+
+.legal-meta p,
+.notice-card p,
+.pricing-card p,
+.support-card p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.plain-list li {
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 6px;
+}
+
 .intro-grid,
 .why-grid,
 .contact-grid,
@@ -543,7 +593,9 @@ html[data-site-lang="zh"] [data-lang-inlineflex="zh"] {
   .contact-grid,
   .detail-grid,
   .site-footer__grid,
-  .hero-stats {
+  .hero-stats,
+  .pricing-grid,
+  .support-grid {
     grid-template-columns: 1fr;
   }
 }
