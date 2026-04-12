@@ -1,7 +1,7 @@
 window.SITE_CONFIG = {
   brandName: "Yungu Studio",
   legalOperatorName: "{{LEGAL_OPERATOR_NAME}}",
-  supportEmail: "support@yungustudio.com",
+  supportEmail: "820713556@qq.com",
   effectiveDate: "{{EFFECTIVE_DATE}}",
   refundWindow: "7 days",
   supportResponseWindow: "3 business days",
