@@ -1,9 +1,9 @@
 window.SITE_CONFIG = {
   brandName: "Yungu Studio",
-  legalOperatorName: "{{LEGAL_OPERATOR_NAME}}",
+  legalOperatorName: "CloudValley Chip Software Design",
   supportEmail: "820713556@qq.com",
   effectiveDate: "{{EFFECTIVE_DATE}}",
-  refundWindow: "7 days",
+  refundWindow: "14 days",
   supportResponseWindow: "3 business days",
   futureBillingProcessor: "Paddle",
   products: {
